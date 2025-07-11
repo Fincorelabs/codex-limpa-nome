@@ -101,7 +101,7 @@
         WhatsApp: <a href="https://wa.me/5500000000000">https://wa.me/5500000000000</a><br/>
         E-mail: contato@codexlimpanome.com.br<br/>
         Instagram: @codexlimpanome<br/>
-        Atendimento: 100% online - Brasil inteiro
+        Atendimento: 100% online para o Brasil inteiro
       </p>
     </div>
   </div>
