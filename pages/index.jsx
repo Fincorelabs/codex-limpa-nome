@@ -11,6 +11,9 @@ export default function Home() {
         <meta property="og:image" content="/og-image-codex.jpg" />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" href="/favicon.ico" />
+
       </Head>
 
       <main
@@ -24,10 +27,10 @@ export default function Home() {
             Códex Limpa Nome™
           </h1>
           <p className="text-lg mb-6 leading-relaxed">
-            Blindagem estratégica de CPF ou CNPJ com proteção e restauração de crédito por até 12 meses.
+            Blindagem estratégica de CPF ou CNPJ com proteção e restauração de crédito.
           </p>
           <a
-            href="https://wa.me/55SEUNUMEROAQUI"
+            href="https://wa.me/5524999579507"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition duration-300"
