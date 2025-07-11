@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import SeoHead from '@/components/SeoHead' // se estiver usando alias
-// ou: import SeoHead from '../components/SeoHead'
+import SeoHead from '../components/SeoHead'
 
 export default function Home() {
   return (
