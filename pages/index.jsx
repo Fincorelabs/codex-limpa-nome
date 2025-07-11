@@ -34,7 +34,7 @@ export default function Home() {
     >
       Quero Limpar Meu Nome
     </a>
-  </div>>
+  </div>
 </div>
 
 {/* DESKTOP: Usa background com cover */}
