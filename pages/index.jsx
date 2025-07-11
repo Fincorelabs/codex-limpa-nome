@@ -17,9 +17,9 @@ export default function Home() {
       {/* MOBILE: Usa uma imagem visível */}
 <div className="md:hidden">
   <img
-    src="/og-image-codex.jpg"
-    alt="Códex Limpa Nome"
-    className="w-full h-[80vh] object-contain bg-black"
+   src="/og-image-codex.jpg"
+  alt="Códex Limpa Nome"
+  className="w-full max-h-[80vh] object-contain mx-auto bg-black"
   />
   <div className="bg-black text-white px-6 py-10 text-center">
     <h1 className="text-3xl font-bold mb-4">Códex Limpa Nome™</h1>
