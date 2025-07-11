@@ -1,1 +1,3 @@
-
+User-agent: *
+Disallow:
+Sitemap: https://codex-limpa-nome.vercel.app/sitemap.xml
