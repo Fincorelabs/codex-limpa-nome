@@ -14,34 +14,54 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Hero */}
-      <main
-        <main
-  className="min-h-screen bg-black text-white flex items-center justify-center bg-cover bg-center md:bg-top bg-no-repeat"
+      {/* MOBILE: Usa uma imagem visível */}
+<div className="md:hidden">
+  <img
+    src="/og-image-codex.jpg"
+    alt="Códex Limpa Nome"
+    className="w-full h-[80vh] object-contain bg-black"
+  />
+  <div className="bg-black text-white px-6 py-10 text-center">
+    <h1 className="text-3xl font-bold mb-4">Códex Limpa Nome™</h1>
+    <p className="text-lg mb-6">
+      Limpeza de Nome e Blindagem Estratégica de CPF/CNPJ por 12 Meses.
+    </p>
+    <a
+      href="https://wa.me/5524999579507"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition duration-300"
+    >
+      Quero Limpar Meu Nome
+    </a>
+  </div>
+</div>
+
+{/* DESKTOP: Usa background com cover */}
+<main
+  className="hidden md:flex min-h-screen bg-black text-white items-center justify-center bg-cover bg-center"
   style={{
     backgroundImage: "url('/og-image-codex.jpg')"
   }}
 >
+  <div className="bg-black/70 p-8 rounded-2xl max-w-xl text-center shadow-xl">
+    <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+      Códex Limpa Nome™
+    </h1>
+    <p className="text-lg mb-6 leading-relaxed">
+      Blindagem estratégica de CPF ou CNPJ com proteção e restauração de crédito.
+    </p>
+    <a
+      href="https://wa.me/5524999579507"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition duration-300"
+    >
+      Quero Limpar Meu Nome
+    </a>
+  </div>
+</main>
 
-        }}
-      >
-        <div className="bg-black/70 p-8 rounded-2xl max-w-xl text-center shadow-xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-            Códex Limpa Nome™
-          </h1>
-          <p className="text-lg mb-6 leading-relaxed">
-            Limpeza de Nome e Blindagem Estratégica de CPF/CNPJ.
-          </p>
-          <a
-            href="https://wa.me/5524999579507"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition duration-300"
-          >
-            Quero Limpar Meu Nome
-          </a>
-        </div>
-      </main>
 
       {/* SOBRE */}
       <section className="bg-gray-100 text-black py-16 px-6 md:px-12">
