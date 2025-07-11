@@ -14,17 +14,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* MOBILE: Usa uma imagem visível */}
-<div className="md:hidden">
+{/* MOBILE: Imagem exibida inteira sem cortes */}
+<div className="md:hidden bg-black">
   <img
-   src="/og-image-codex.jpg"
-  alt="Códex Limpa Nome"
-  className="w-full max-h-[80vh] object-contain mx-auto bg-black"
+    src="/og-image-codex.jpg"
+    alt="Códex Limpa Nome"
+    className="w-full h-auto object-contain"
   />
   <div className="bg-black text-white px-6 py-10 text-center">
     <h1 className="text-3xl font-bold mb-4">Códex Limpa Nome™</h1>
     <p className="text-lg mb-6">
-      Limpeza de Nome e Blindagem Estratégica de CPF/CNPJ.
+      Blindagem estratégica de CPF ou CNPJ com proteção e restauração de crédito.
     </p>
     <a
       href="https://wa.me/5524999579507"
@@ -34,7 +34,7 @@ export default function Home() {
     >
       Quero Limpar Meu Nome
     </a>
-  </div>
+  </div>>
 </div>
 
 {/* DESKTOP: Usa background com cover */}
