@@ -15,13 +15,13 @@ export default function Home() {
       </Head>
 
       {/* HERO */}
-      <section className="min-h-screen bg-[#0d0d0d] text-white flex items-center justify-center px-6 md:px-16">
+      <section className="min-h-screen flex items-center justify-center px-6 md:px-16 text-white bg-gradient-to-b from-[#0d0d0d] to-[#1a1f24]">
         <div className="max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
             Códex Limpa Nome™
           </h1>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
-            Solução técnica e estratégica para blindagem de CPF ou CNPJ, com reabilitação total do crédito e proteção institucional.
+            Solução técnica e estratégica para blindagem de CPF ou CNPJ, com reabilitação e blindagem total do crédito e proteção institucional.
           </p>
           <a
             href="https://wa.me/5524999579507"
@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       {/* SOBRE */}
-      <section className="bg-black text-gray-200 py-20 px-6 md:px-24">
+      <section className="bg-[#121212] text-gray-200 py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold text-white mb-6">Sobre o Serviço</h2>
           <p className="text-lg leading-relaxed">
@@ -46,8 +46,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* O QUE ESTÁ INCLUSO */}
-      <section className="bg-[#121212] text-gray-100 py-20 px-6 md:px-24">
+      {/* INCLUSO */}
+      <section className="bg-[#181818] text-gray-100 py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold mb-6 text-white">O que está incluso</h2>
           <ul className="space-y-4 text-lg list-disc list-inside">
@@ -61,7 +61,7 @@ export default function Home() {
       </section>
 
       {/* PARA QUEM É */}
-      <section className="bg-black text-gray-200 py-20 px-6 md:px-24">
+      <section className="bg-[#121212] text-gray-200 py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold text-white mb-6">Para quem é</h2>
           <p className="text-lg leading-relaxed">
@@ -70,8 +70,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* POLÍTICA DE USO */}
-      <section className="bg-[#121212] text-gray-200 py-20 px-6 md:px-24">
+      {/* POLÍTICA */}
+      <section className="bg-[#181818] text-gray-200 py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold text-white mb-6">Política de Uso</h2>
           <p className="text-lg leading-relaxed">
@@ -80,8 +80,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CHAMADA PARA AÇÃO */}
-      <section className="bg-black text-white py-24 px-6 md:px-24 text-center">
+      {/* CALL TO ACTION */}
+      <section className="bg-gradient-to-t from-[#0d0d0d] to-[#1a1f24] text-white py-24 px-6 md:px-24 text-center">
         <h2 className="text-3xl font-semibold mb-4">Agendamento Confidencial</h2>
         <p className="text-lg text-gray-300 mb-6">
           Nossa equipe explica o procedimento via Google Meet ou WhatsApp. Atendimento sigiloso e exclusivo.
