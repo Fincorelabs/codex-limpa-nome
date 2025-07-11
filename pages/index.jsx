@@ -71,7 +71,7 @@ export default function Home() {
             O sistema de crédito não perdoa. Se o seu CPF ou CNPJ está com restrições, você já enfrentou: empréstimos recusados, contratos bloqueados, limite de crédito reduzido e imagem comprometida.
           </p>
           <p className="text-lg leading-relaxed">
-            A <strong>Códex Limpa Nome™</strong> oferece um serviço confidencial e técnico, atuando nos bastidores dos principais órgãos de proteção ao crédito, promovendo a reabilitação total do seu nome e blindagem.
+            A <strong>Códex Limpa Nome™</strong> oferece um serviço confidencial e técnico, atuando nos bastidores dos principais órgãos de proteção ao crédito, promovendo a reabilitação e blindagem total do seu nome.
           </p>
         </div>
       </section>
