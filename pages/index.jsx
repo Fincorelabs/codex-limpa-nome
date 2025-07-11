@@ -16,9 +16,13 @@ export default function Home() {
 
       {/* Hero */}
       <main
-        className="min-h-screen bg-black text-white flex items-center justify-center bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/og-image-codex.jpg')"
+        <main
+  className="min-h-screen bg-black text-white flex items-center justify-center bg-cover bg-center md:bg-top bg-no-repeat"
+  style={{
+    backgroundImage: "url('/og-image-codex.jpg')"
+  }}
+>
+
         }}
       >
         <div className="bg-black/70 p-8 rounded-2xl max-w-xl text-center shadow-xl">
@@ -26,7 +30,7 @@ export default function Home() {
             Códex Limpa Nome™
           </h1>
           <p className="text-lg mb-6 leading-relaxed">
-            Limpeza de Nome e Blindagem Estratégica de CPF/CNPJ por 12 Meses.
+            Limpeza de Nome e Blindagem Estratégica de CPF/CNPJ.
           </p>
           <a
             href="https://wa.me/5524999579507"
@@ -60,7 +64,7 @@ export default function Home() {
             <li>🔎 Varredura profunda nos principais órgãos de proteção ao crédito</li>
             <li>📑 Contestação técnica com base na LGPD e no Código de Defesa do Consumidor</li>
             <li>🧹 Remoção de registros prescritos ou inconsistentes</li>
-            <li>🛡️ Blindagem contra recontaminação por 12 meses</li>
+            <li>🛡️ Blindagem contra recontaminação</li>
             <li>📘 Manual de conduta para manter seu nome limpo</li>
           </ul>
         </div>
