@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import SeoHead from '@/components/SeoHead' // se estiver usando alias
 // ou: import SeoHead from '../components/SeoHead'
 
@@ -5,6 +6,7 @@ export default function Home() {
   return (
     <>
       <SeoHead />
+      <Head>
         <title>Códex Limpa Nome™</title>
         <meta name="description" content="Blindagem estratégica e restauração técnica de crédito para CPF e CNPJ." />
         <meta property="og:title" content="Códex Limpa Nome™" />
