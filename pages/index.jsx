@@ -21,7 +21,7 @@ export default function Home() {
             Códex Limpa Nome™
           </h1>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
-            Solução técnica e estratégica para blindagem de CPF ou CNPJ, com reabilitação e blindagem total do crédito e proteção institucional.
+            Solução técnica e estratégica para blindagem de CPF ou CNPJ, com reabilitação total do crédito e proteção institucional blindada.
           </p>
           <a
             href="https://wa.me/5524999579507"
