@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Head>
         <title>Códex Limpa Nome™</title>
-        <meta name="description" content="Limpeza de Nome e Blindagem Estratégica de CPF ou CNPJ por 12 meses." />
+        <meta name="description" content="Limpeza de Nome e Blindagem Estratégica de CPF ou CNPJ." />
         <meta property="og:title" content="Códex Limpa Nome™" />
         <meta property="og:description" content="Serviço técnico e confidencial de reabilitação de crédito e proteção do CPF/CNPJ." />
         <meta property="og:image" content="/og-image-codex.jpg" />
@@ -24,7 +24,7 @@ export default function Home() {
   <div className="bg-black text-white px-6 py-10 text-center">
     <h1 className="text-3xl font-bold mb-4">Códex Limpa Nome™</h1>
     <p className="text-lg mb-6">
-      Limpeza de Nome e Blindagem Estratégica de CPF/CNPJ por 12 Meses.
+      Limpeza de Nome e Blindagem Estratégica de CPF/CNPJ.
     </p>
     <a
       href="https://wa.me/5524999579507"
@@ -114,7 +114,7 @@ export default function Home() {
       <section className="bg-black text-white py-16 px-6 md:px-12 text-center">
         <h2 className="text-3xl font-bold mb-4">Agende Agora</h2>
         <p className="text-lg mb-6">
-          Explicamos tudo em até 5 minutos via Google Meet ou WhatsApp, com total sigilo.
+          Explicamos tudo via Google Meet ou WhatsApp, com total sigilo.
         </p>
         <a
           href="https://wa.me/5524999579507"
