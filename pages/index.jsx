@@ -21,7 +21,7 @@ export default function Home() {
             Códex Limpa Nome™
           </h1>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
-            Solução técnica e estratégica para blindagem de CPF ou CNPJ, com reabilitação total do crédito e proteção institucional por 12 meses.
+            Solução técnica e estratégica para blindagem de CPF ou CNPJ, com reabilitação total do crédito e proteção institucional.
           </p>
           <a
             href="https://wa.me/5524999579507"
@@ -54,7 +54,7 @@ export default function Home() {
             <li>Varredura técnica nos principais órgãos de crédito</li>
             <li>Contestação jurídica com base na LGPD e CDC</li>
             <li>Remoção de registros inconsistentes ou prescritos</li>
-            <li>Blindagem de CPF/CNPJ por até 12 meses</li>
+            <li>Blindagem de CPF/CNPJ</li>
             <li>Manual de conduta para manutenção da reabilitação</li>
           </ul>
         </div>
@@ -84,7 +84,7 @@ export default function Home() {
       <section className="bg-black text-white py-24 px-6 md:px-24 text-center">
         <h2 className="text-3xl font-semibold mb-4">Agendamento Confidencial</h2>
         <p className="text-lg text-gray-300 mb-6">
-          Nossa equipe explica o procedimento em até 5 minutos via Google Meet ou WhatsApp. Atendimento sigiloso e exclusivo.
+          Nossa equipe explica o procedimento via Google Meet ou WhatsApp. Atendimento sigiloso e exclusivo.
         </p>
         <a
           href="https://wa.me/5524999579507"
