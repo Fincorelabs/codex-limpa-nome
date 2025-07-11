@@ -5,129 +5,99 @@ export default function Home() {
     <>
       <Head>
         <title>Códex Limpa Nome™</title>
-        <meta name="description" content="Limpeza de Nome e Blindagem Estratégica de CPF ou CNPJ." />
+        <meta name="description" content="Blindagem estratégica e restauração técnica de crédito para CPF e CNPJ." />
         <meta property="og:title" content="Códex Limpa Nome™" />
-        <meta property="og:description" content="Serviço técnico e confidencial de reabilitação de crédito e proteção do CPF/CNPJ." />
+        <meta property="og:description" content="Serviço institucional de proteção e reabilitação de crédito, com base na LGPD e CDC." />
         <meta property="og:image" content="/og-image-codex.jpg" />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-{/* MOBILE: Imagem exibida inteira sem cortes */}
-<div className="md:hidden bg-black">
-  <img
-    src="/og-image-codex.jpg"
-    alt="Códex Limpa Nome"
-    className="w-full h-auto object-contain"
-  />
-  <div className="bg-black text-white px-6 py-10 text-center">
-    <h1 className="text-3xl font-bold mb-4">Códex Limpa Nome™</h1>
-    <p className="text-lg mb-6">
-      Blindagem estratégica de CPF ou CNPJ com proteção e restauração de crédito.
-    </p>
-    <a
-      href="https://wa.me/5524999579507"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition duration-300"
-    >
-      Quero Limpar Meu Nome
-    </a>
-  </div>
-</div>
-
-{/* DESKTOP: Usa background com cover */}
-<main
-  className="hidden md:flex min-h-screen bg-black text-white items-center justify-center bg-cover bg-center"
-  style={{
-    backgroundImage: "url('/og-image-codex.jpg')"
-  }}
->
-  <div className="bg-black/70 p-8 rounded-2xl max-w-xl text-center shadow-xl">
-    <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-      Códex Limpa Nome™
-    </h1>
-    <p className="text-lg mb-6 leading-relaxed">
-      Blindagem estratégica de CPF ou CNPJ com proteção e restauração de crédito.
-    </p>
-    <a
-      href="https://wa.me/5524999579507"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition duration-300"
-    >
-      Quero Limpar Meu Nome
-    </a>
-  </div>
-</main>
-
+      {/* HERO */}
+      <section className="min-h-screen bg-[#0d0d0d] text-white flex items-center justify-center px-6 md:px-16">
+        <div className="max-w-4xl text-center">
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
+            Códex Limpa Nome™
+          </h1>
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+            Solução técnica e estratégica para blindagem de CPF ou CNPJ, com reabilitação total do crédito e proteção institucional por 12 meses.
+          </p>
+          <a
+            href="https://wa.me/5524999579507"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-[#c7a254] text-[#c7a254] hover:bg-[#c7a254] hover:text-black font-medium px-6 py-3 rounded-full transition duration-300"
+          >
+            Agendar Atendimento Confidencial
+          </a>
+        </div>
+      </section>
 
       {/* SOBRE */}
-      <section className="bg-gray-100 text-black py-16 px-6 md:px-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Sobre o Serviço</h2>
-          <p className="text-lg leading-relaxed mb-4">
-            O sistema de crédito não perdoa. Se o seu CPF ou CNPJ está com restrições, você já enfrentou: empréstimos recusados, contratos bloqueados, limite de crédito reduzido e imagem comprometida.
-          </p>
+      <section className="bg-black text-gray-200 py-20 px-6 md:px-24">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-semibold text-white mb-6">Sobre o Serviço</h2>
           <p className="text-lg leading-relaxed">
-            A <strong>Códex Limpa Nome™</strong> oferece um serviço confidencial e técnico, atuando nos bastidores dos principais órgãos de proteção ao crédito, promovendo a reabilitação e blindagem total do seu nome.
+            O sistema de crédito brasileiro é implacável. Uma vez que CPF ou CNPJ estão com restrições, profissionais e empresas enfrentam bloqueios bancários, queda de score, perda de acesso a crédito e danos reputacionais.
+            <br /><br />
+            A <strong>Códex Limpa Nome™</strong> oferece uma abordagem institucional, fundamentada na LGPD e no Código de Defesa do Consumidor, com respaldo técnico e jurídico para a reabilitação de registros junto aos principais órgãos de proteção ao crédito.
           </p>
         </div>
       </section>
 
       {/* O QUE ESTÁ INCLUSO */}
-      <section className="bg-white text-black py-16 px-6 md:px-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">O Que Está Incluso</h2>
-          <ul className="text-lg space-y-4 text-left max-w-xl mx-auto list-disc list-inside">
-            <li>🔎 Varredura profunda nos principais órgãos de proteção ao crédito</li>
-            <li>📑 Contestação técnica com base na LGPD e no Código de Defesa do Consumidor</li>
-            <li>🧹 Remoção de registros prescritos ou inconsistentes</li>
-            <li>🛡️ Blindagem contra recontaminação</li>
-            <li>📘 Manual de conduta para manter seu nome limpo</li>
+      <section className="bg-[#121212] text-gray-100 py-20 px-6 md:px-24">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-semibold mb-6 text-white">O que está incluso</h2>
+          <ul className="space-y-4 text-lg list-disc list-inside">
+            <li>Varredura técnica nos principais órgãos de crédito</li>
+            <li>Contestação jurídica com base na LGPD e CDC</li>
+            <li>Remoção de registros inconsistentes ou prescritos</li>
+            <li>Blindagem de CPF/CNPJ por até 12 meses</li>
+            <li>Manual de conduta para manutenção da reabilitação</li>
           </ul>
         </div>
       </section>
 
       {/* PARA QUEM É */}
-      <section className="bg-gray-100 text-black py-16 px-6 md:px-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Para Quem É</h2>
+      <section className="bg-black text-gray-200 py-20 px-6 md:px-24">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-semibold text-white mb-6">Para quem é</h2>
           <p className="text-lg leading-relaxed">
-            Ideal para pessoas físicas e empresas que precisam limpar seu nome, aumentar o score, recuperar crédito ou voltar a operar legalmente com segurança e respaldo técnico.
+            O serviço é indicado para profissionais, empresários, investidores e empresas que desejam recuperar seu histórico de crédito, aumentar score, retomar acesso a financiamentos e reconstruir sua imagem financeira institucional.
           </p>
         </div>
       </section>
 
       {/* POLÍTICA DE USO */}
-      <section className="bg-white text-black py-16 px-6 md:px-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Política de Uso</h2>
+      <section className="bg-[#121212] text-gray-200 py-20 px-6 md:px-24">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-semibold text-white mb-6">Política de Uso</h2>
           <p className="text-lg leading-relaxed">
-            Ao contratar nossos serviços, o cliente concorda com os termos de uso estabelecidos, incluindo a veracidade das informações fornecidas, o compromisso com o cumprimento dos prazos e a aceitação dos processos técnicos utilizados. Garantimos total sigilo e conformidade legal em todas as etapas.
+            Ao contratar nossos serviços, o cliente concorda com os termos institucionais de uso, fornecendo informações verídicas e autorizando os procedimentos técnicos e jurídicos necessários. A confidencialidade é garantida em todas as etapas.
           </p>
         </div>
       </section>
 
       {/* CHAMADA PARA AÇÃO */}
-      <section className="bg-black text-white py-16 px-6 md:px-12 text-center">
-        <h2 className="text-3xl font-bold mb-4">Agende Agora</h2>
-        <p className="text-lg mb-6">
-          Explicamos tudo via Google Meet ou WhatsApp, com total sigilo.
+      <section className="bg-black text-white py-24 px-6 md:px-24 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Agendamento Confidencial</h2>
+        <p className="text-lg text-gray-300 mb-6">
+          Nossa equipe explica o procedimento em até 5 minutos via Google Meet ou WhatsApp. Atendimento sigiloso e exclusivo.
         </p>
         <a
           href="https://wa.me/5524999579507"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4 rounded-full transition duration-300"
+          className="inline-block border border-[#c7a254] text-[#c7a254] hover:bg-[#c7a254] hover:text-black font-medium px-8 py-4 rounded-full transition duration-300"
         >
-          Agendar Atendimento
+          Iniciar Atendimento
         </a>
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black text-white py-6 text-center text-sm">
+      <footer className="bg-black text-gray-500 py-6 text-center text-sm">
         © {new Date().getFullYear()} Códex Limpa Nome™. Todos os direitos reservados.
       </footer>
     </>
