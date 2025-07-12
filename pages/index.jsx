@@ -94,13 +94,40 @@ export default function Home() {
           </p>
         </div>
       </section>
-       {/* FORMULÁRIO DE AUTORIZAÇÃO */}
+       {/* FORMULÁRIO DE CONSULTA */}
 <section className="bg-[#0d0d0d] text-white py-16 px-6 md:px-24">
   <div className="max-w-xl mx-auto text-center">
-    <h2 className="text-2xl font-semibold mb-4">Solicite sua análise confidencial</h2>
+    <h2 className="text-2xl font-semibold mb-4">Consulta Confidencial</h2>
     <form
-      action="https://formsubmit.co/seu-email@gmail.com"
-      method="POST"
+      onSubmit={async (e) => {
+        e.preventDefault()
+
+        const formData = {
+          nome: e.target.nome.value,
+          email: e.target.email.value,
+          documento: e.target.documento.value,
+          tipo: e.target.tipo.value
+        }
+
+        try {
+          const res = await fetch('http://localhost:3001/api/consultar', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+          })
+
+          const json = await res.json()
+          if (json.sucesso) {
+            alert('Consulta realizada com sucesso!')
+            console.log(json.dados) // aqui você pode exibir ou armazenar
+          } else {
+            alert('Erro na consulta. Verifique os dados.')
+          }
+        } catch (err) {
+          console.error(err)
+          alert('Erro de conexão com o servidor.')
+        }
+      }}
       className="space-y-4 text-left"
     >
       <input
@@ -111,30 +138,33 @@ export default function Home() {
         className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
       />
       <input
+        type="email"
+        name="email"
+        required
+        placeholder="Seu e-mail"
+        className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
+      />
+      <input
         type="text"
-        name="cpf_cnpj"
+        name="documento"
         required
         placeholder="CPF ou CNPJ"
         className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
       />
-      <input
-        type="email"
-        name="email"
-        required
-        placeholder="Email para envio do relatório"
+      <select
+        name="tipo"
         className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
-      />
-      <label className="inline-flex items-start space-x-2 text-sm text-gray-300">
-        <input type="checkbox" required name="consentimento" />
-        <span>
-          Autorizo o uso dos meus dados para consulta em órgãos de crédito e declaro estar ciente da LGPD.
-        </span>
-      </label>
+        required
+      >
+        <option value="">Selecione o tipo</option>
+        <option value="cpf">CPF</option>
+        <option value="cnpj">CNPJ</option>
+      </select>
       <button
         type="submit"
         className="w-full py-3 bg-[#c7a254] hover:bg-[#d8b165] text-black font-medium rounded transition duration-300"
       >
-        Enviar Solicitação
+        Enviar Consulta
       </button>
     </form>
   </div>
