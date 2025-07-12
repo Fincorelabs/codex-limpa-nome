@@ -35,13 +35,10 @@ export default function Home() {
           </a>
         </div>
 
-   {/* Seta animada apenas no mobile, centralizada */}
-<div
-  className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce opacity-80 block md:hidden"
-  aria-hidden="true"
->
+   {/* Seta animada apenas no mobile, 100% centralizada */}
+<div className="absolute bottom-12 w-full flex justify-center md:hidden" aria-hidden="true">
   <svg
-    className="w-10 h-10 text-[#c7a254]"
+    className="w-10 h-10 text-[#c7a254] animate-bounce opacity-80"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
