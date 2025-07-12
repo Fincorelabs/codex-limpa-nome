@@ -36,13 +36,13 @@ export default function Home() {
         </div>
 
         {/* Seta animada */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce opacity-80" aria-hidden="true">
+ <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce opacity-80 block md:hidden" aria-hidden="true">
   <svg
     className="w-10 h-10 text-[#c7a254]"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
-    strokeWidth={3} // espessura aumentada
+    strokeWidth={3}
   >
     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
   </svg>
