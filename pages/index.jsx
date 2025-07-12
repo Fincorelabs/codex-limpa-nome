@@ -18,6 +18,25 @@ export default function Home() {
 
       {/* HERO */}
       <section className="min-h-screen flex items-center justify-center px-6 md:px-16 text-white bg-[#111111] relative">
+       {/* TOPO: Logo + frase institucional + selo de segurança */}
+<div className="absolute top-4 left-0 right-0 flex items-center justify-between px-4 md:px-16 z-50">
+  {/* Logo */}
+  <div className="flex items-center space-x-2">
+    <img src="/logo.svg" alt="Logo Codex" className="h-8 w-auto" />
+  </div>
+
+  {/* Frase institucional (opcional) */}
+  <div className="hidden md:block text-sm text-gray-400 text-center mx-auto absolute left-1/2 transform -translate-x-1/2">
+    Plataforma privada de reabilitação de crédito e blindagem institucional
+  </div>
+
+  {/* Selo de segurança */}
+  <div className="text-xs text-gray-400 text-right leading-tight">
+    🔒 Site seguro <br />
+    ✅ Consultas confidenciais
+  </div>
+</div>
+
         <div className="max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
             Códex Limpa Nome™
