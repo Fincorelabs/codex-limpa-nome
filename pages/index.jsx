@@ -117,7 +117,7 @@ export default function Home() {
 <section className="bg-[#0d0d0d] text-white py-16 px-6 md:px-24">
   <div className="max-w-xl mx-auto text-center">
     <h2 className="text-2xl font-semibold mb-4">Consulta Confidencial</h2>
-  <form onSubmit={handleSubmit} className="space-y-6">
+<form onSubmit={handleSubmit} className="space-y-6">
   <input
     type="text"
     name="nome"
@@ -140,7 +140,9 @@ export default function Home() {
       className="accent-yellow-500"
       name="lgpd"
     />
-    <span>Li e concordo com a <a href="#" className="underline text-yellow-500">Política de Privacidade (LGPD)</a></span>
+    <span>
+      Li e concordo com a <a href="#" className="underline text-yellow-500">Política de Privacidade (LGPD)</a>
+    </span>
   </label>
 
   <button
@@ -150,6 +152,7 @@ export default function Home() {
     Enviar Consulta
   </button>
 </form>
+
   </div>
 </section>
 
