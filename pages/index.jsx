@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import SeoHead from '../components/SeoHead'
+import Head from 'next/head';
+import SeoHead from '../components/SeoHead';
 
 export default function Home() {
   return (
@@ -7,9 +7,15 @@ export default function Home() {
       <SeoHead />
       <Head>
         <title>Códex Limpa Nome™</title>
-        <meta name="description" content="Blindagem estratégica e restauração técnica de crédito para CPF e CNPJ." />
+        <meta
+          name="description"
+          content="Blindagem estratégica e restauração técnica de crédito para CPF e CNPJ."
+        />
         <meta property="og:title" content="Códex Limpa Nome™" />
-        <meta property="og:description" content="Serviço institucional de proteção e reabilitação de crédito, com base na LGPD e CDC." />
+        <meta
+          property="og:description"
+          content="Serviço institucional de proteção e reabilitação de crédito, com base na LGPD e CDC."
+        />
         <meta property="og:image" content="/og-image-codex.jpg" />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,24 +24,24 @@ export default function Home() {
 
       {/* HERO */}
       <section className="min-h-screen flex items-center justify-center px-6 md:px-16 text-white bg-[#111111] relative">
-       {/* TOPO: Logo + frase institucional + selo de segurança */}
-<div className="absolute top-4 left-0 right-0 flex items-center justify-between px-4 md:px-16 z-50">
-  {/* Logo */}
-  <div className="flex items-center space-x-2">
-    <img src="/logo.svg" alt="Logo Codex" className="h-8 w-auto" />
-  </div>
+        {/* TOPO: Logo + frase institucional + selo de segurança */}
+        <div className="absolute top-4 left-0 right-0 flex items-center justify-between px-4 md:px-16 z-50">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <img src="/logo.svg" alt="Logo Codex" className="h-8 w-auto" />
+          </div>
 
-  {/* Frase institucional (opcional) */}
-  <div className="hidden md:block text-sm text-gray-400 text-center mx-auto absolute left-1/2 transform -translate-x-1/2">
-    Plataforma privada de reabilitação de crédito e blindagem institucional
-  </div>
+          {/* Frase institucional */}
+          <div className="hidden md:block text-sm text-gray-400 text-center mx-auto absolute left-1/2 transform -translate-x-1/2">
+            Plataforma privada de reabilitação de crédito e blindagem institucional
+          </div>
 
-  {/* Selo de segurança */}
-  <div className="text-xs text-gray-400 text-right leading-tight">
-    🔒 Site seguro <br />
-    ✅ Consultas confidenciais
-  </div>
-</div>
+          {/* Selo de segurança */}
+          <div className="text-xs text-gray-400 text-right leading-tight">
+            🔒 Site seguro <br />
+            ✅ Consultas confidenciais
+          </div>
+        </div>
 
         <div className="max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
@@ -54,18 +60,18 @@ export default function Home() {
           </a>
         </div>
 
-   {/* Seta animada apenas no mobile, 100% centralizada */}
-<div className="absolute bottom-12 w-full flex justify-center md:hidden" aria-hidden="true">
-  <svg
-    className="w-10 h-10 text-[#c7a254] animate-bounce opacity-80"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    strokeWidth={3}
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-  </svg>
-</div>
+        {/* Seta animada apenas no mobile, 100% centralizada */}
+        <div className="absolute bottom-12 w-full flex justify-center md:hidden" aria-hidden="true">
+          <svg
+            className="w-10 h-10 text-[#c7a254] animate-bounce opacity-80"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={3}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
       </section>
 
       {/* SOBRE */}
@@ -74,7 +80,8 @@ export default function Home() {
           <h2 className="text-3xl font-semibold text-white mb-6">Sobre o Serviço</h2>
           <p className="text-lg leading-relaxed">
             O sistema de crédito brasileiro é implacável. Uma vez que CPF ou CNPJ estão com restrições, profissionais e empresas enfrentam bloqueios bancários, queda de score, perda de acesso a crédito e danos reputacionais.
-            <br /><br />
+            <br />
+            <br />
             A <strong>Códex Limpa Nome™</strong> oferece uma abordagem institucional, fundamentada na LGPD e no Código de Defesa do Consumidor, com respaldo técnico e jurídico para a reabilitação de registros junto aos principais órgãos de proteção ao crédito.
           </p>
         </div>
@@ -112,7 +119,7 @@ export default function Home() {
             Ao contratar nossos serviços, o cliente concorda com os termos institucionais de uso, fornecendo informações verídicas e autorizando os procedimentos técnicos e jurídicos necessários. A confidencialidade é garantida em todas as etapas.
           </p>
         </div>
-       </section>
+      </section>
 
       {/* CALL TO ACTION */}
       <section className="bg-[#111111] text-white py-24 px-6 md:px-24 text-center">
@@ -135,5 +142,5 @@ export default function Home() {
         © {new Date().getFullYear()} Códex Limpa Nome™. Todos os direitos reservados.
       </footer>
     </>
-  )
+  );
 }
