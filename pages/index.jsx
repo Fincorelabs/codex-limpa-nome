@@ -94,6 +94,51 @@ export default function Home() {
           </p>
         </div>
       </section>
+       {/* FORMULÁRIO DE AUTORIZAÇÃO */}
+<section className="bg-[#0d0d0d] text-white py-16 px-6 md:px-24">
+  <div className="max-w-xl mx-auto text-center">
+    <h2 className="text-2xl font-semibold mb-4">Solicite sua análise confidencial</h2>
+    <form
+      action="https://formsubmit.co/seu-email@gmail.com"
+      method="POST"
+      className="space-y-4 text-left"
+    >
+      <input
+        type="text"
+        name="nome"
+        required
+        placeholder="Nome completo"
+        className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
+      />
+      <input
+        type="text"
+        name="cpf_cnpj"
+        required
+        placeholder="CPF ou CNPJ"
+        className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
+      />
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Email para envio do relatório"
+        className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
+      />
+      <label className="inline-flex items-start space-x-2 text-sm text-gray-300">
+        <input type="checkbox" required name="consentimento" />
+        <span>
+          Autorizo o uso dos meus dados para consulta em órgãos de crédito e declaro estar ciente da LGPD.
+        </span>
+      </label>
+      <button
+        type="submit"
+        className="w-full py-3 bg-[#c7a254] hover:bg-[#d8b165] text-black font-medium rounded transition duration-300"
+      >
+        Enviar Solicitação
+      </button>
+    </form>
+  </div>
+</section>
 
       {/* CALL TO ACTION */}
       <section className="bg-[#111111] text-white py-24 px-6 md:px-24 text-center">
