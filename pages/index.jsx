@@ -117,75 +117,39 @@ export default function Home() {
 <section className="bg-[#0d0d0d] text-white py-16 px-6 md:px-24">
   <div className="max-w-xl mx-auto text-center">
     <h2 className="text-2xl font-semibold mb-4">Consulta Confidencial</h2>
-    <form
-      onSubmit={async (e) => {
-        e.preventDefault()
+  <form onSubmit={handleSubmit} className="space-y-6">
+  <input
+    type="text"
+    name="nome"
+    placeholder="Seu nome completo"
+    required
+    className="w-full p-3 rounded bg-[#1c1c1c] text-white"
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Seu e-mail"
+    required
+    className="w-full p-3 rounded bg-[#1c1c1c] text-white"
+  />
 
-        const formData = {
-          nome: e.target.nome.value,
-          email: e.target.email.value,
-          documento: e.target.documento.value,
-          tipo: e.target.tipo.value
-        }
+  <label className="flex items-center space-x-2 text-sm text-gray-300">
+    <input
+      type="checkbox"
+      required
+      className="accent-yellow-500"
+      name="lgpd"
+    />
+    <span>Li e concordo com a <a href="#" className="underline text-yellow-500">Política de Privacidade (LGPD)</a></span>
+  </label>
 
-        try {
-          const res = await fetch('http://localhost:3001/api/consultar', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData)
-          })
-
-          const json = await res.json()
-          if (json.sucesso) {
-            alert('Consulta realizada com sucesso!')
-            console.log(json.dados) // aqui você pode exibir ou armazenar
-          } else {
-            alert('Erro na consulta. Verifique os dados.')
-          }
-        } catch (err) {
-          console.error(err)
-          alert('Erro de conexão com o servidor.')
-        }
-      }}
-      className="space-y-4 text-left"
-    >
-      <input
-        type="text"
-        name="nome"
-        required
-        placeholder="Nome completo"
-        className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
-      />
-      <input
-        type="email"
-        name="email"
-        required
-        placeholder="Seu e-mail"
-        className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
-      />
-      <input
-        type="text"
-        name="documento"
-        required
-        placeholder="CPF ou CNPJ"
-        className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
-      />
-      <select
-        name="tipo"
-        className="w-full px-4 py-2 rounded bg-[#1a1f24] text-white border border-gray-600"
-        required
-      >
-        <option value="">Selecione o tipo</option>
-        <option value="cpf">CPF</option>
-        <option value="cnpj">CNPJ</option>
-      </select>
-      <button
-        type="submit"
-        className="w-full py-3 bg-[#c7a254] hover:bg-[#d8b165] text-black font-medium rounded transition duration-300"
-      >
-        Enviar Consulta
-      </button>
-    </form>
+  <button
+    type="submit"
+    className="bg-yellow-500 text-black px-6 py-3 rounded font-medium hover:bg-yellow-600"
+  >
+    Enviar Consulta
+  </button>
+</form>
   </div>
 </section>
 
