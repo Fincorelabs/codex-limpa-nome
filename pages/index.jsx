@@ -36,11 +36,17 @@ export default function Home() {
         </div>
 
         {/* Seta animada */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <svg className="w-6 h-6 text-[#c7a254]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
+        <div className="absolute bottom-13 left-1/2 transform -translate-x-1/2 animate-bounce opacity-80" aria-hidden="true">
+  <svg
+    className="w-10 h-10 text-[#c7a254]"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={3} // espessura aumentada
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</div>
       </section>
 
       {/* SOBRE */}
