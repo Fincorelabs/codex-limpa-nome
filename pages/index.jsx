@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center px-6 md:px-16 text-white bg-gradient-to-b from-[#0d0d0d] to-[#1a1f24]">
+      <section className="min-h-screen flex items-center justify-center px-6 md:px-16 text-white bg-[#111111] relative">
         <div className="max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
             Códex Limpa Nome™
@@ -35,18 +35,16 @@ export default function Home() {
           </a>
         </div>
 
-          {/* Seta de rolagem para baixo */}
-  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <svg className="w-8 h-8 text-[#c7a254]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-    </svg>
-  </div>
-
-
+        {/* Seta animada */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <svg className="w-6 h-6 text-[#c7a254]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
       </section>
 
       {/* SOBRE */}
-      <section className="bg-[#121212] text-gray-200 py-20 px-6 md:px-24">
+      <section className="bg-[#111111] text-gray-200 py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold text-white mb-6">Sobre o Serviço</h2>
           <p className="text-lg leading-relaxed">
@@ -58,7 +56,7 @@ export default function Home() {
       </section>
 
       {/* INCLUSO */}
-      <section className="bg-[#181818] text-gray-100 py-20 px-6 md:px-24">
+      <section className="bg-[#111111] text-gray-200 py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold mb-6 text-white">O que está incluso</h2>
           <ul className="space-y-4 text-lg list-disc list-inside">
@@ -72,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* PARA QUEM É */}
-      <section className="bg-[#121212] text-gray-200 py-20 px-6 md:px-24">
+      <section className="bg-[#111111] text-gray-200 py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold text-white mb-6">Para quem é</h2>
           <p className="text-lg leading-relaxed">
@@ -82,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* POLÍTICA */}
-      <section className="bg-[#181818] text-gray-200 py-20 px-6 md:px-24">
+      <section className="bg-[#111111] text-gray-200 py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-semibold text-white mb-6">Política de Uso</h2>
           <p className="text-lg leading-relaxed">
@@ -92,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* CALL TO ACTION */}
-      <section className="bg-gradient-to-t from-[#0d0d0d] to-[#1a1f24] text-white py-24 px-6 md:px-24 text-center">
+      <section className="bg-[#111111] text-white py-24 px-6 md:px-24 text-center">
         <h2 className="text-3xl font-semibold mb-4">Agendamento Confidencial</h2>
         <p className="text-lg text-gray-300 mb-6">
           Nossa equipe explica o procedimento via Google Meet ou WhatsApp. Atendimento sigiloso e exclusivo.
