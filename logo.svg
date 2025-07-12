@@ -1,0 +1,3 @@
+<div className="absolute top-4 left-4">
+  <img src="/logo.svg" alt="Logo Codex" className="h-8" />
+</div>
