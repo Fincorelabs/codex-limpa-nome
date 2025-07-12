@@ -112,49 +112,7 @@ export default function Home() {
             Ao contratar nossos serviços, o cliente concorda com os termos institucionais de uso, fornecendo informações verídicas e autorizando os procedimentos técnicos e jurídicos necessários. A confidencialidade é garantida em todas as etapas.
           </p>
         </div>
-      </section>
-       {/* FORMULÁRIO DE CONSULTA */}
-<section className="bg-[#0d0d0d] text-white py-16 px-6 md:px-24">
-  <div className="max-w-xl mx-auto text-center">
-    <h2 className="text-2xl font-semibold mb-4">Consulta Confidencial</h2>
-<form onSubmit={handleSubmit} className="space-y-6">
-  <input
-    type="text"
-    name="nome"
-    placeholder="Seu nome completo"
-    required
-    className="w-full p-3 rounded bg-[#1c1c1c] text-white"
-  />
-  <input
-    type="email"
-    name="email"
-    placeholder="Seu e-mail"
-    required
-    className="w-full p-3 rounded bg-[#1c1c1c] text-white"
-  />
-
-  <label className="flex items-center space-x-2 text-sm text-gray-300">
-    <input
-      type="checkbox"
-      required
-      className="accent-yellow-500"
-      name="lgpd"
-    />
-    <span>
-      Li e concordo com a <a href="#" className="underline text-yellow-500">Política de Privacidade (LGPD)</a>
-    </span>
-  </label>
-
-  <button
-    type="submit"
-    className="bg-yellow-500 text-black px-6 py-3 rounded font-medium hover:bg-yellow-600"
-  >
-    Enviar Consulta
-  </button>
-</form>
-
-  </div>
-</section>
+       </section>
 
       {/* CALL TO ACTION */}
       <section className="bg-[#111111] text-white py-24 px-6 md:px-24 text-center">
