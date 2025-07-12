@@ -36,7 +36,7 @@ export default function Home() {
         </div>
 
         {/* Seta animada */}
-        <div className="absolute bottom-13 left-1/2 transform -translate-x-1/2 animate-bounce opacity-80" aria-hidden="true">
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce opacity-80" aria-hidden="true">
   <svg
     className="w-10 h-10 text-[#c7a254]"
     fill="none"
