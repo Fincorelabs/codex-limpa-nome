@@ -28,8 +28,7 @@ export default function Home() {
         <div className="absolute top-4 left-0 right-0 flex items-center justify-between px-4 md:px-16 z-50">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-           <img src="/logo.png" alt="Logo Codex" className="h-8 w-auto" />
-
+          <img src="/logo.png" alt="Logo Codex" className="h-12 w-auto" />
           </div>
 
           {/* Frase institucional */}
