@@ -1,146 +1,93 @@
-import Head from 'next/head';
-import SeoHead from '../components/SeoHead';
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <>
-      <SeoHead />
       <Head>
-        <title>Códex Limpa Nome™</title>
-        <meta
-          name="description"
-          content="Blindagem estratégica e restauração técnica de crédito para CPF e CNPJ."
-        />
-        <meta property="og:title" content="Códex Limpa Nome™" />
-        <meta
-          property="og:description"
-          content="Serviço institucional de proteção e reabilitação de crédito, com base na LGPD e CDC."
-        />
-        <meta property="og:image" content="/og-image-codex.jpg" />
+        <title>Revalidar™</title>
+        <meta name="description" content="Seu nome, sua empresa, sua credibilidade — reativada." />
+        <meta property="og:title" content="Revalidar™" />
+        <meta property="og:description" content="Serviço técnico e estratégico para reabilitação de crédito de CPF e CNPJ, com proteção institucional." />
+        <meta property="og:image" content="/og-image-revalidar.jpg" />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center px-6 md:px-16 text-white bg-[#111111] relative">
-        {/* TOPO: Logo + frase institucional + selo de segurança */}
-        <div className="absolute top-4 left-0 right-0 flex items-center justify-between px-4 md:px-16 z-50">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Logo Codex" className="h-12 w-auto" />
-          </div>
-
-          {/* Frase institucional */}
-          <div className="hidden md:block text-sm text-gray-400 text-center mx-auto absolute left-1/2 transform -translate-x-1/2">
-            Plataforma privada de reabilitação de crédito e blindagem institucional
-          </div>
-
-          {/* Selo de segurança */}
-          <div className="text-xs text-gray-400 text-right leading-tight">
-            🔒 Site seguro <br />
-            ✅ Consultas confidenciais
-          </div>
-        </div>
-
+      <section className="min-h-screen flex items-center justify-center px-6 md:px-16 text-[#111] bg-[#f9f9f9]">
         <div className="max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
-            Códex Limpa Nome™
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-[#0c3c78]">
+            Revalidar™
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
-            Solução técnica e estratégica para blindagem de CPF ou CNPJ, com reabilitação total do crédito e proteção institucional blindada.
+          <p className="text-lg md:text-xl text-[#555] leading-relaxed mb-8">
+            Seu nome, sua empresa, sua credibilidade — reativada.
           </p>
           <a
             href="https://wa.me/5524999579507"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border border-[#c7a254] text-[#c7a254] hover:bg-[#c7a254] hover:text-black font-medium px-6 py-3 rounded-full transition duration-300"
+            className="inline-block bg-[#0c3c78] text-white hover:bg-[#092d5c] font-medium px-6 py-3 rounded-full transition duration-300"
           >
-            Agendar Atendimento Confidencial
+            Falar com um Especialista
           </a>
         </div>
-
-        {/* Seta animada apenas no mobile, 100% centralizada */}
-        <div className="absolute bottom-12 w-full flex justify-center md:hidden" aria-hidden="true">
-          <svg
-            className="w-10 h-10 text-[#c7a254] animate-bounce opacity-80"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={3}
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
       </section>
 
-      {/* SOBRE */}
-      <section className="bg-[#111111] text-gray-200 py-20 px-6 md:px-24">
+      {/* SERVIÇOS */}
+      <section className="bg-white text-[#111] py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-semibold text-white mb-6">Sobre o Serviço</h2>
-          <p className="text-lg leading-relaxed">
-            O sistema de crédito brasileiro é implacável. Uma vez que CPF ou CNPJ estão com restrições, profissionais e empresas enfrentam bloqueios bancários, queda de score, perda de acesso a crédito e danos reputacionais.
-            <br />
-            <br />
-            A <strong>Códex Limpa Nome™</strong> oferece uma abordagem institucional, fundamentada na LGPD e no Código de Defesa do Consumidor, com respaldo técnico e jurídico para a reabilitação de registros junto aos principais órgãos de proteção ao crédito.
-          </p>
-        </div>
-      </section>
-
-      {/* INCLUSO */}
-      <section className="bg-[#111111] text-gray-200 py-20 px-6 md:px-24">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-6 text-white">O que está incluso</h2>
-          <ul className="space-y-4 text-lg list-disc list-inside">
-            <li>Varredura técnica nos principais órgãos de crédito</li>
-            <li>Contestação jurídica com base na LGPD e CDC</li>
-            <li>Remoção de registros inconsistentes ou prescritos</li>
-            <li>Blindagem de CPF/CNPJ</li>
-            <li>Manual de conduta para manutenção da reabilitação</li>
+          <h2 className="text-3xl font-semibold mb-6">O que oferecemos</h2>
+          <ul className="space-y-4 text-lg list-disc list-inside text-[#444]">
+            <li>Remoção de dívidas e registros vencidos junto ao Bacen, Serasa, Boa Vista e SPC</li>
+            <li>Melhoria de score e reputação junto ao sistema bancário</li>
+            <li>Blindagem institucional de CPF e CNPJ</li>
+            <li>Atuação com respaldo técnico e jurídico</li>
+            <li>Reabilitação completa de crédito com orientação contínua</li>
           </ul>
         </div>
       </section>
 
       {/* PARA QUEM É */}
-      <section className="bg-[#111111] text-gray-200 py-20 px-6 md:px-24">
+      <section className="bg-[#f1f1f1] text-[#111] py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-semibold text-white mb-6">Para quem é</h2>
-          <p className="text-lg leading-relaxed">
-            O serviço é indicado para profissionais, empresários, investidores e empresas que desejam recuperar seu histórico de crédito, aumentar score, retomar acesso a financiamentos e reconstruir sua imagem financeira institucional.
+          <h2 className="text-3xl font-semibold mb-6">Quem atendemos</h2>
+          <p className="text-lg leading-relaxed text-[#444]">
+            Pessoas físicas, autônomos, empresários e empresas que precisam restaurar seu acesso ao crédito, aumentar score, limpar registros e retomar a confiança institucional no mercado.
           </p>
         </div>
       </section>
 
       {/* POLÍTICA */}
-      <section className="bg-[#111111] text-gray-200 py-20 px-6 md:px-24">
+      <section className="bg-white text-[#111] py-20 px-6 md:px-24">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-semibold text-white mb-6">Política de Uso</h2>
-          <p className="text-lg leading-relaxed">
-            Ao contratar nossos serviços, o cliente concorda com os termos institucionais de uso, fornecendo informações verídicas e autorizando os procedimentos técnicos e jurídicos necessários. A confidencialidade é garantida em todas as etapas.
+          <h2 className="text-3xl font-semibold mb-6">Política de Atendimento</h2>
+          <p className="text-lg leading-relaxed text-[#555]">
+            Todas as etapas são conduzidas com absoluto sigilo. O cliente fornece documentos e autorizações para iniciarmos a atuação técnica e jurídica junto aos órgãos competentes. A confidencialidade é assegurada por contrato.
           </p>
         </div>
       </section>
 
-      {/* CALL TO ACTION */}
-      <section className="bg-[#111111] text-white py-24 px-6 md:px-24 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Agendamento Confidencial</h2>
-        <p className="text-lg text-gray-300 mb-6">
-          Nossa equipe explica o procedimento via Google Meet ou WhatsApp. Atendimento sigiloso e exclusivo.
+      {/* CTA FINAL */}
+      <section className="bg-[#f9f9f9] text-center py-24 px-6 md:px-24">
+        <h2 className="text-3xl font-bold mb-4 text-[#0c3c78]">Agende sua análise gratuita</h2>
+        <p className="text-lg text-[#555] mb-6">
+          Fale com um consultor especializado. Atendimento via Google Meet ou WhatsApp com total sigilo institucional.
         </p>
         <a
           href="https://wa.me/5524999579507"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block border border-[#c7a254] text-[#c7a254] hover:bg-[#c7a254] hover:text-black font-medium px-8 py-4 rounded-full transition duration-300"
+          className="inline-block bg-[#0c3c78] text-white hover:bg-[#092d5c] font-medium px-8 py-4 rounded-full transition duration-300"
         >
-          Iniciar Atendimento
+          Iniciar Atendimento Confidencial
         </a>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-black text-gray-500 py-6 text-center text-sm">
-        © {new Date().getFullYear()} Códex Limpa Nome™. Todos os direitos reservados.
+      {/* RODAPÉ */}
+      <footer className="bg-[#eaeaea] text-[#555] py-6 text-center text-sm">
+        © {new Date().getFullYear()} Revalidar™. Todos os direitos reservados.
       </footer>
     </>
-  );
+  )
 }
