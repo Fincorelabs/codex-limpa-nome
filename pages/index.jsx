@@ -14,25 +14,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center px-6 md:px-16 text-[#111] bg-[#f9f9f9]">
-        <div className="max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-[#0c3c78]">
-            Revalidar™
-          </h1>
-          <p className="text-lg md:text-xl text-[#555] leading-relaxed mb-8">
-            Seu nome, sua empresa, sua credibilidade — reativada.
-          </p>
-          <a
-            href="https://wa.me/5524999579507"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#0c3c78] text-white hover:bg-[#092d5c] font-medium px-6 py-3 rounded-full transition duration-300"
-          >
-            Falar com um Especialista
-          </a>
-        </div>
-      </section>
+   {/* HERO */}
+<section className="relative min-h-screen flex items-center justify-center px-6 md:px-16 text-[#111] bg-[#f9f9f9]">
+  <div className="max-w-4xl text-center">
+    <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-[#0c3c78]">
+      Revalidar™
+    </h1>
+    <p className="text-lg md:text-xl text-[#555] leading-relaxed mb-8">
+      Seu nome, sua empresa, sua credibilidade — reativada.
+    </p>
+    <a
+      href="https://wa.me/5524999579507"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-[#0c3c78] text-white hover:bg-[#092d5c] font-medium px-6 py-3 rounded-full transition duration-300"
+    >
+      Falar com um Especialista
+    </a>
+  </div>
+
+  {/* SETA ANIMADA */}
+  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+    <div className="animate-bounce text-[#0c3c78] text-3xl">
+      ↓
+    </div>
+  </div>
+</section>
 
       {/* SERVIÇOS */}
       <section className="bg-white text-[#111] py-20 px-6 md:px-24">
