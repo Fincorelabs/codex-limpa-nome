@@ -87,7 +87,7 @@ export default function Home() {
 
       {/* CTA FINAL */}
       <section className="bg-[#f9f9f9] text-center py-24 px-6 md:px-24">
-        <h2 className="text-3xl font-bold mb-4 text-[#0c3c78]">Agende sua análise gratuita</h2>
+        <h2 className="text-3xl font-bold mb-4 text-[#0c3c78]">Agende sua análise</h2>
         <p className="text-lg text-[#555] mb-6">
           Fale com um consultor especializado. Atendimento via Google Meet ou WhatsApp com total sigilo institucional.
         </p>
