@@ -35,7 +35,7 @@ export default function Home() {
 
   {/* SETA ANIMADA */}
   <div className="absolute bottom-13 left-1/2 transform -translate-x-1/2">
-    <div className="animate-bounce text-[#0c3c78] text-3xl">
+    <div className="animate-bounce text-[#0D3B66] text-3xl">
       ↓
     </div>
   </div>
