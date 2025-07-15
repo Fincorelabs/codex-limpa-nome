@@ -33,11 +33,22 @@ export default function Home() {
     </a>
   </div>
 
-  {/* SETA ANIMADA */}
-  <div className="absolute bottom-13 left-1/2 transform -translate-x-1/2">
-    <div className="animate-bounce text-[#0D3B66] text-3xl">
-      ↓
-    </div>
+{/* SETA SVG EM "V" GROSSO – APENAS MOBILE */}
+<div className="block md:hidden absolute bottom-20 left-1/2 transform -translate-x-1/2">
+  <svg
+    className="animate-bounce"
+    width="40"
+    height="40"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#0c3c78"
+    strokeWidth="3"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <polyline points="6 9 12 15 18 9" />
+  </svg>
+</div>
   </div>
 </section>
 
